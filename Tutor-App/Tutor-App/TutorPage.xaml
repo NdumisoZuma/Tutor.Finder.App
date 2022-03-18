@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"           
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tutor_App.TutorPage"
+             
+             xmlns:local="clr-namespace:Tutor_App;assembly=Tutor_App"
+             xmlns:behavior="clr-namespace:Tutor_App.Behavior;assembly=Tutor_App"
+             
+             >
+    
+    
+    <ContentPage.Content>
+        <ScrollView>
+
+        <StackLayout>
+            <StackLayout>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                    <Label Margin="0,10" Text="Create Tutor profile " FontAttributes="Bold" FontSize="Title" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+                    
+                    
+
+                    <Entry x:Name="TxtName" Placeholder="Tutor Name"></Entry>
+                    <Editor x:Name="TxtDescription" Placeholder="About yourself"  HeightRequest="100"/>
+                    <Entry x:Name="TxtQualification" Placeholder="Qualification"></Entry>
+                    <Entry x:Name="TxtExperience" Placeholder="Number of years tutoring/teaching" Keyboard="Numeric"></Entry>
+                    <Entry x:Name="TxtAddress" Placeholder="Address Line"></Entry>
+                    <Entry x:Name="TxtCity" Placeholder="City"></Entry>
+                        <Entry x:Name="TxtPostal" Placeholder="Postal Code" Keyboard="Numeric"></Entry>
+                        <Entry x:Name="TxtFees" Placeholder="Fees(per hour)" Keyboard="Numeric"></Entry>
+
+                    <Entry x:Name="TxtPhone" Placeholder="Phone (Required)" Keyboard="Numeric" >
+                        <Entry.Behaviors>
+                            <behavior:MaskedBehavior Mask="(XXX) XXX-XXXX" />
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Entry x:Name="TxtEmail" Placeholder="Email"></Entry>
+                       
+                    <Editor x:Name="TxtSubjects" Placeholder="Specialties" HeightRequest="100"/>
+
+
+
+                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button x:Name="BtnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked"/>
+                        
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button x:Name="BtnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked" />
+                    </StackLayout>
+
+                    <ListView x:Name="LstTutors" ItemSelected="LstTutors_OnItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Name}"></TextCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        </ScrollView>
+
+
+    </ContentPage.Content>
+</ContentPage>

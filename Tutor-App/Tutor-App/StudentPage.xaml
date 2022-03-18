@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behavior="clr-namespace:Tutor_App.Behavior;assembly=Tutor_App"
+             x:Class="Tutor_App.StudentPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+        <StackLayout>
+            <StackLayout>
+                <Entry x:Name="TxtName" Placeholder="Enter Your Name"></Entry>
+                <Entry x:Name="TxtAddressLine" Placeholder="Address Line"></Entry>
+                <Entry x:Name="TxtCity" Placeholder="city"></Entry>
+                <Entry x:Name="TxtPostal" Placeholder="postal" Keyboard="Numeric"></Entry>
+                <Entry x:Name="TxtEmail" Placeholder="email"></Entry>
+
+
+                <Entry x:Name="TxtPhone" Placeholder="Phone" Keyboard="Numeric" >
+                    <Entry.Behaviors>
+                        <behavior:MaskedBehavior Mask="(XXX) XXX-XXXX" />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Entry x:Name="TxtSchool" Placeholder="school"></Entry>
+
+                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                            <Button x:Name="BtnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked"/>
+                            <Button x:Name="BtnDelete" WidthRequest="200" Text="Delete" Clicked="BtnDelete_Clicked" />
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                            <Button x:Name="BtnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked" />
+                        </StackLayout>
+
+                        <ListView x:Name="LstStudents" ItemSelected="LstStudents_OnItemSelected">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextCell Text="{Binding Name}"></TextCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </StackLayout>
+        </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

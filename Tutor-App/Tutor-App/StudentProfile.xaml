@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tutor_App.StudentProfile"
+             xmlns:class1="clr-namespace:Tutor_App">
+    
+    
+    <ContentPage.Content>
+
+
+
+        <StackLayout>
+            <Label Text="Student Profile" FontSize="Medium" FontFamily="Times New Roman"
+                 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+
+                <Grid.ColumnDefinitions  Width="*"/>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Row="0"
+                       Text="Student Profile page"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       />
+
+
+
+
+
+
+
+                <Label Grid.Row="1" Text="Name"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="1" x:Name="TxtName"
+                       HorizontalOptions="End"/>
+
+
+
+
+
+                <Label Grid.Row="2" Text="City"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="2" x:Name="TxtCity"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="3" Text="Email"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="3" x:Name="TxtAddress"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="4" Text="School"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="4" x:Name="txtEmail"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="5" Text="Phone Number"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="5" x:Name="TxtPhone"
+                       HorizontalOptions="End"/>
+
+                <Label Grid.Row="6" Text="Address"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="6" x:Name="TxtSchool"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="End"/>
+
+
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

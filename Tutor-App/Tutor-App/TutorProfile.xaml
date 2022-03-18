@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tutor_App.TutorProfile">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <BoxView HeightRequest="1" BackgroundColor="#ffffff"
+               />
+            <Label Text="Tutor Profile" FontSize="Medium" FontFamily="Times New Roman"
+                 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+
+                <Grid.ColumnDefinitions  Width="*"/>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="60"/>
+
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Row="0"
+                       Text="Tutor Image"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       />
+                
+                
+
+
+
+
+
+                <Label Grid.Row="1" Text="Name"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="1" x:Name="TxtName"
+                       HorizontalOptions="End"/>
+
+
+
+
+
+                <Label Grid.Row="2" Text="City"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="2" x:Name="TxtCity"
+                       HorizontalOptions="End"/>
+
+                <Label Grid.Row="3" Text="Address"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="3" x:Name="TxtAddress"
+                       HorizontalOptions="End"/>
+                
+                
+                <Label Grid.Row="4" Text="Fees"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="4" x:Name="TxtFees"
+                       HorizontalOptions="End"/>
+
+                <Label Grid.Row="5" Text="Postal"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="5" x:Name="TxtExp"
+                       HorizontalOptions="End"/>
+
+                <Label Grid.Row="6" Text="Qualifications"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="6" x:Name="TxtQualifications"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="7" Text="Specialties"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="7" x:Name="TxtSubjects"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="8" Text="Email"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="8" x:Name="TxtEmail"
+                       HorizontalOptions="End"/>
+
+
+
+
+                <Label Grid.Row="9" Text="Experiance"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Start" />
+
+                <Label Grid.Row="9" x:Name="TxtPhone"
+                       HorizontalOptions="End"/>
+
+                <Label Grid.Row="10" Text="Description"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center" />
+
+                <Label Grid.Row="11" x:Name="TxtDesc"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center"/>
+
+
+                
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
